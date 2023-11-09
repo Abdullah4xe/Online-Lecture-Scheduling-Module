@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Course Schedule</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <div>
+        <input type="checkbox" checked="checked" id="dyer" value="Dyer"
+               onclick='handleClick(this);' />
+        <label for="dyer" style="margin-right: 20px">
+            Prof. William Dyer
+        </label>
+        <input type="checkbox" checked="checked" id="fletcher" value="Fletcher"
+               onclick='handleClick(this);' />
+        <label for="fletcher" style="margin-right: 20px">
+            Prof. Ann Fletcher
+        </label>
+        <input type="checkbox" checked="checked" id="dillamond" value="Dillamond"
+               onclick='handleClick(this);' />
+        <label for="dillamond" style="margin-right: 30px">
+            Dr. Gregory Dillamond
+        </label>
+        <label for="location">
+            Location:
+        </label>
+        <select id="location" onchange='filterLocation(this)'></select>
+
+    </div>
+        <div style="position: absolute; top: 40px; left: 0px; right: 0px; bottom: 0px;">
+            <div id="calendar" style="height: 100%; width: 100%;">
+            </div>
+
+            <script src="Scheduling.js" type="text/javascript"></script>
+            <script src="ListSchedule.js" type="text/javascript"></script>
+</body>
+</html>
